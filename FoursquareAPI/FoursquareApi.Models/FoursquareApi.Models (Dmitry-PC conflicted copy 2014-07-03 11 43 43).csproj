@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9E7091B-E26A-4881-8149-6A6164EB9AFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoursquareApi.Models</RootNamespace>
+    <AssemblyName>FoursquareApi.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Badge.cs" />
+    <Compile Include="Common\Checkin\CompactCheckin.cs" />
+    <Compile Include="Common\Checkin\CompleteCheckin.cs" />
+    <Compile Include="Common\Comment.cs" />
+    <Compile Include="Common\Event.cs" />
+    <Compile Include="Common\Hour\Hour.cs" />
+    <Compile Include="Common\Image.cs" />
+    <Compile Include="Common\Link.cs" />
+    <Compile Include="Common\List.cs" />
+    <Compile Include="Common\ListItem.cs" />
+    <Compile Include="Common\Mayor.cs" />
+    <Compile Include="Common\Menu.cs" />
+    <Compile Include="Common\Meta.cs" />
+    <Compile Include="Common\Photo.cs" />
+    <Compile Include="Common\Scores.cs" />
+    <Compile Include="Common\Tip\CompactTip.cs" />
+    <Compile Include="Common\Tip\CompleteTip.cs" />
+    <Compile Include="Common\Todo.cs" />
+    <Compile Include="Common\User\CompactUser.cs" />
+    <Compile Include="Common\User\CompleteUser.cs" />
+    <Compile Include="Common\User\MiniUser.cs" />
+    <Compile Include="Common\VenueStats.cs" />
+    <Compile Include="Common\VenueTimeSeries.cs" />
+    <Compile Include="Common\Venue\CompactVenue.cs" />
+    <Compile Include="Common\Venue\CompleteVenue.cs" />
+    <Compile Include="Common\Category.cs" />
+    <Compile Include="Common\Contact.cs" />
+    <Compile Include="Common\Location.cs" />
+    <Compile Include="Common\Price.cs" />
+    <Compile Include="Common\Special.cs" />
+    <Compile Include="Common\Stats.cs" />
+    <Compile Include="Common\Venue\MiniVenue.cs" />
+    <Compile Include="FoursquareBaseModel.cs" />
+    <Compile Include="FoursquareItemsEntity.cs" />
+    <Compile Include="FoursquareGroupsEntity.cs" />
+    <Compile Include="OAuth\AccessTokenModel.cs" />
+    <Compile Include="Users\FriendRequestsModel.cs" />
+    <Compile Include="Users\LeaderboardModel.cs" />
+    <Compile Include="Users\SearchUsersModel.cs" />
+    <Compile Include="Users\UserBadgesModel.cs" />
+    <Compile Include="Users\UserCheckinsModel.cs" />
+    <Compile Include="Users\UserInfoModel.cs" />
+    <Compile Include="Users\UserListsModel.cs" />
+    <Compile Include="Users\UserMayorshipsModel.cs" />
+    <Compile Include="Users\UserPhotosModel.cs" />
+    <Compile Include="Users\UserTipsModel.cs" />
+    <Compile Include="Users\UserTodosModel.cs" />
+    <Compile Include="Users\UserVenueHistoryModel.cs" />
+    <Compile Include="Venues\ExploreVenuesModel.cs" />
+    <Compile Include="Venues\HereNowModel.cs" />
+    <Compile Include="Venues\ManagedVenuesModel.cs" />
+    <Compile Include="Venues\NextVenuesModel.cs" />
+    <Compile Include="Venues\SearchVenuesModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Venues\SimilarVenuesModel.cs" />
+    <Compile Include="Venues\SuggestCompletionVenuesModel.cs" />
+    <Compile Include="Venues\TrendingVenuesModel.cs" />
+    <Compile Include="Venues\UserFriendsModel.cs" />
+    <Compile Include="Venues\VenueEventsModel.cs" />
+    <Compile Include="Venues\VenueHoursModel.cs" />
+    <Compile Include="Venues\VenueLikesModel.cs" />
+    <Compile Include="Venues\VenueLinksModel.cs" />
+    <Compile Include="Venues\VenueListsModel.cs" />
+    <Compile Include="Venues\VenueMenuModel.cs" />
+    <Compile Include="Venues\VenuePhotosModel.cs" />
+    <Compile Include="Venues\VenuesCategoriesModel.cs" />
+    <Compile Include="Venues\VenueDetailModel.cs" />
+    <Compile Include="Venues\VenueStatsModel.cs" />
+    <Compile Include="Venues\VenueTimeSeriesModel.cs" />
+    <Compile Include="Venues\VenueTipsModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Campaigns\" />
+    <Folder Include="Checkins\" />
+    <Folder Include="Lists\" />
+    <Folder Include="Photos\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Specials\" />
+    <Folder Include="Tips\" />
+    <Folder Include="Updates\" />
+    <Folder Include="VenueGroups\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HttpClient\HttpClient.csproj">
+      <Project>{090C973A-2BA4-4608-AA38-B9C8FB121AC7}</Project>
+      <Name>HttpClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
