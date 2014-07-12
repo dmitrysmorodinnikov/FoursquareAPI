@@ -13,7 +13,7 @@ namespace SamplesProject
         static void Main(string[] args)
         {
             var clientId = "Your_clientId";
-            var clientSecret = "Your_clienrSecret";
+            var clientSecret = "Your_clientSecret";
             var redirectUri = "Your_RedirectUri";
             var accessToken = "Your_accessToken";
             var foursquare = new Foursquare(clientId,clientSecret, redirectUri,accessToken);
