@@ -37,12 +37,12 @@ Authentication
 Start by registering your app to obtain its Foursquare API credentials.
 Then send a request to foursquare authentication service which will return a code to your Redirect URI:
 ```
+var foursquare = new Foursquare(clientId, clientSecret, redirectUri, null);
 foursquare.Authenticate();
 ```
 Finally you should use the code you received earlier to get access token which is used for authentication-sensitive features:
 ```
-var foursquare = new Foursquare(clientId, clientSecret, redirectUri, null)
-var accessToken = foursquare.GetAccessToken("code")
+var accessToken = foursquare.GetAccessToken("code");
 ``` 
  
 Save this access token for this user in your database.
