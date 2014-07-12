@@ -1,6 +1,6 @@
 FoursquareAPI
 =============
-Foursquare API .NET wrapper is written in C# and provides quick access to Foursquare API v2. Support oAuth protocol. Now Venues and Users endpoints are almost fully implemented. All the other endpoints implementations will be published as they are tested properly, it's the question of the nearest future. 
+Foursquare API .NET wrapper is written in C# and provides quick access to Foursquare API v2. Supports oAuth protocol. Now Venues and Users endpoints are almost fully implemented. All the other endpoints implementations will be published as they are tested properly, it's the question of the nearest future. 
 
 Do not hesitate and look for code examples in SamplesProject which is a part of the solution.
 
