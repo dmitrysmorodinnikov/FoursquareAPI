@@ -17,6 +17,13 @@ namespace FoursquareApi
             _clientSecret = clientSecret;
         }
 
+        public Foursquare(string clientId, string clientSecret, string redirectUri)
+        {
+            _clientId = clientId;
+            _clientSecret = clientSecret;
+            _redirectUri = redirectUri;
+        }
+
         public Foursquare(string clientId, string clientSecret, string redirectUri, string accessToken)
         {
             _accessToken = accessToken;

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FoursquareApi;
-using FoursquareApi.Models.Users;
+﻿using FoursquareApi;
 
 namespace SamplesProject
 {
@@ -16,8 +10,14 @@ namespace SamplesProject
             var clientSecret = "Your_clientSecret";
             var redirectUri = "Your_RedirectUri";
             var accessToken = "Your_accessToken";
-            var foursquare = new Foursquare(clientId,clientSecret, redirectUri,accessToken);
-            var result = foursquare.Venues.TrendingVenues(40.7,-74);
+            var foursquare = new Foursquare(clientId, clientSecret, redirectUri,accessToken);
+            //foursquare.
+            
+
+            var venueDetail = foursquare.Venues.VenueDetail("4c263af6a852c9287537e66c");
+            var trendingVenues = foursquare.Venues.TrendingVenues(40.7,-74);
+            var userDetail = foursquare.Users.User("userId");
+            var userPhotos = foursquare.Users.UserPhotos("userId");
         }
     }
 }
