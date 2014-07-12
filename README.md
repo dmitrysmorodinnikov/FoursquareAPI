@@ -51,3 +51,4 @@ Save this access token for this user in your database.
 Author
 ========
 <a href="https://twitter.com/federer_15" target=_blank title="Dmitry Smorodinnikov">@federer_15</a>
+<a href="http://smorodinnikov.com" target=_blank title="Dmitry Smorodinnikov">My Blog</a>
