@@ -48,6 +48,10 @@ var accessToken = foursquare.GetAccessToken("code");
 Save this access token for this user in your database.
 
 
+More info
+==============
+More detailed information about Foursquare API, endpoints, authentication etc can be found at <a href="https://developer.foursquare.com/" target=_blank title="My Twitter">https://developer.foursquare.com/</a><br/>
+
 Author
 ========
 <a href="https://twitter.com/federer_15" target=_blank title="My Twitter">@federer_15</a><br/>

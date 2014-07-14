@@ -11,7 +11,7 @@ namespace SamplesProject
             var redirectUri = "Your_RedirectUri";
             var accessToken = "Your_accessToken";
             var foursquare = new Foursquare(clientId, clientSecret, redirectUri,accessToken);
-            //foursquare.
+            
             
 
             var venueDetail = foursquare.Venues.VenueDetail("4c263af6a852c9287537e66c");
